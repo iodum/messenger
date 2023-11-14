@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+@import "partials/variables";
+@import "partials/button/button";
+@import "partials/icon-button/icon-button";
+@import "partials/chats/chats";
+@import "partials/dialog/dialog";
+@import "partials/form-field/form-field";
+@import "partials/input/input";
+@import "partials/error-page/error-page";
+@import "partials/message/message";
+@import "partials/signin/login-form";
+@import "partials/profile/profile";
+
+:root {
+  font-family: Nunito, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $text-main;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px
+}
+
+::-webkit-scrollbar-thumb {
+  background: $bg-dark-color;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $border-color;
+  cursor: grab;
+}
+
+::-webkit-scrollbar-track {
+  background:$bg-default-color;
+  border-radius: 6px;
+}
+
+a {
+  font-size: 12px;
+  color: $primary-color;
+  text-decoration: inherit;
+
+  &:hover {
+    color: $primary-color-hover;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links {
+  margin: 50px 0;
+}

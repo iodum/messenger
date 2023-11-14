@@ -1,0 +1,60 @@
+<div class="chats">
+    <div class="dialogs">
+        <div class="dialogs__header">
+            <div class="dialogs__profile">
+                <a href="#">
+                    Профиль <span class="material-icons">chevron_right</span>
+                </a>
+            </div>
+            <div class="dialogs__search">
+                {{> input/input name="search" class="chats__text-field" placeholder="Поиск" }}
+            </div>
+        </div>
+
+        <ul class="dialogs__list">
+            {{> dialog/dialog}}
+            {{> dialog/dialog unread="4" }}
+            {{> dialog/dialog}}
+            {{> dialog/dialog}}
+        </ul>
+
+    </div>
+    <div class="chat">
+        <div class="chat__header">
+            <div class="chat__info">
+                {{> dialog/dialog info="true"}}
+            </div>
+            <div class="chat__actions">
+                {{> icon-button/icon-button icon="more_vert" }}
+            </div>
+        </div>
+        <div class="chat__messages">
+            <h5>19 июня</h5>
+            <ul>
+                <li class="chat__message chat__message-in">
+                    <div class="chat__message_text">
+                        Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+                        Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+                    </div>
+                    <div class="chat__message_time">11:56</div>
+                </li>
+                <li class="chat__message chat__message-in  chat__message-img">
+                    <img src="https://random.imagecdn.app/300/200" alt="">
+                    <div class="chat__message_time">12:06</div>
+                </li>
+                <li class="chat__message chat__message-out">
+                    <div class="chat__message_text">
+                        Круто!
+                    </div>
+                    <div class="chat__message_time">12:00</div>
+                </li>
+                {{> message/message type="in" text="lala" time="12:00" }}
+            </ul>
+        </div>
+        <form class="chat__form">
+            {{> icon-button/icon-button icon="attach_file" }}
+            {{> input/input name="message" class="chats__text-field" placeholder="Сообщение" }}
+            {{> icon-button/icon-button icon="east" primary="true" }}
+        </form>
+    </div>
+</div>

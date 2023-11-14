@@ -1,0 +1,32 @@
+@import "../variables";
+
+button {
+  background: $primary-color;
+  border-radius: 8px;
+  height: 37px;
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+
+  &:hover {
+    background: $primary-color-hover;;
+  }
+}
+
+.link-button {
+  background: none;
+  color: $primary-color;
+  padding: 0;
+  width: auto;
+
+  &:hover {
+    color: $primary-color-hover;
+    background: none;
+  }
+
+  &-error {
+    color: $text-error
+  }
+}

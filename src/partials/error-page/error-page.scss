@@ -1,0 +1,21 @@
+.error-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__info {
+    max-width: 200px;
+    text-align: center;
+
+    &_number {
+      margin: 0;
+    }
+
+    &_title {
+      margin: 10px 0 50px;
+    }
+  }
+}

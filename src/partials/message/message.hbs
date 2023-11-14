@@ -1,0 +1,12 @@
+<li class="chat__message chat__message-{{ type }} {{#if img}}chat__message-img{{/if}}">
+    {{#if text}}
+        <div class="chat__message_text">
+            {{ text }}
+        </div>
+    {{/if}}
+
+    {{#if img}}
+        <img src="{{ img }}" alt="">
+    {{/if}}
+    <div class="chat__message_time">{{ time }}</div>
+</li>

@@ -1,0 +1,14 @@
+@import "../variables";
+
+.form-field {
+  margin-bottom: 16px;
+
+  label {
+    display: block;
+    font-size: 10px;
+    color: $text-light;
+    text-align: left;
+    line-height: 1;
+  }
+}
+

@@ -1,0 +1,21 @@
+.login-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 340px;
+    min-height: 450px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 30px;
+  }
+
+  &__buttons {
+    margin-top: auto;
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

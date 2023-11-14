@@ -1,0 +1,51 @@
+<div class="profile">
+   <div class="profile__back">
+       {{> icon-button/icon-button icon="west" primary="true" }}
+   </div>
+    <form class="profile__form">
+        <div class="profile__avatar">
+            <span class="material-icons">wallpaper</span>
+            {{> input/input name="avatar" type="file" }}
+        </div>
+        <h2 class="profile__name">Иван</h2>
+
+        <div class="profile__info">
+            <div class="profile__info-row">
+                <label for="email">Почта</label>
+                {{> input/input name="email" type="text" disabled="true" value="pochta@yandex.ru" }}
+            </div>
+            <div class="profile__info-row">
+                <label for="login">Логин</label>
+                {{> input/input name="login" type="text" disabled="true" value="ivanivanov" }}
+            </div>
+            <div class="profile__info-row">
+                <label for="first_name">Имя</label>
+                {{> input/input name="first_name" type="text" disabled="true" value="Иван" }}
+            </div>
+            <div class="profile__info-row">
+                <label for="second_name">Фамилия</label>
+                {{> input/input name="second_name" type="text" disabled="true" value="Иванов" }}
+            </div>
+            <div class="profile__info-row">
+                <label for="display_name">Имя в чате</label>
+                {{> input/input name="display_name" type="text" disabled="true" value="Иван" }}
+            </div>
+            <div class="profile__info-row">
+                <label for="phone">Телефон</label>
+                {{> input/input name="phone" type="text" disabled="true" value="+7 (909) 967 30 30" }}
+            </div>
+        </div>
+
+        <div class="profile__info">
+            <div class="profile__info-row">
+                <button class="link-button">Изменить данные</button>
+            </div>
+            <div class="profile__info-row">
+                <button class="link-button">Изменить пароль</button>
+            </div>
+            <div class="profile__info-row">
+                <button class="link-button link-button-error">Выйти</button>
+            </div>
+        </div>
+    </form>
+</div>
