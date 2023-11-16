@@ -1,0 +1,100 @@
+@import "../variables";
+
+$dialogs-width: 310px;
+
+.chats {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  &__text-field {
+    border: 1px solid $bg-dark-color;
+    background: $bg-dark-color;
+    border-radius: 5px;
+    min-height: 32px;
+    resize: none;
+    width: 100%;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    outline: none;
+
+    &:hover, &:focus {
+      border-color: $primary-color;
+    }
+  }
+}
+
+.dialogs {
+  width: $dialogs-width;
+  background: $bg-default-color;
+  border-right: $border;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &__header {
+    padding-bottom: 14px;
+  }
+
+  &__list {
+    overflow-y: auto;
+  }
+
+  &__profile {
+    text-align: right;
+    padding-bottom: 10px;
+
+    a {
+      color: $text-light;
+
+      span {
+        font-size: 12px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.chat {
+  width: calc(100% - $dialogs-width);
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    border-bottom: $border;
+  }
+
+  &__messages {
+    padding: 30px 0;
+    overflow-y: auto;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h5 {
+      text-align: center;
+      color: $text-light;
+      font-weight: 400;
+    }
+  }
+
+
+
+  &__form {
+    margin-top: auto;
+    border-top: $border;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+
+  }
+}

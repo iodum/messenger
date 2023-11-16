@@ -1,0 +1,74 @@
+@import "../variables";
+
+.dialog {
+  border-top: $border;
+  padding: 12px 0;
+  display: flex;
+  gap: 12px;
+
+
+  &__photo {
+    border-radius: 50%;
+    background: $bg-dark-color;
+    width: 47px;
+    height: 47px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2px;
+    margin-bottom: 2px;
+
+    &_name {
+      font-size: 14px;
+      font-weight: bold;
+      width: 150px;
+      height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $text-main;
+    }
+
+    &_date {
+      font-size: 11px;
+      color: $text-light;
+    }
+  }
+
+  &__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.2;
+    color: $text-light;
+    max-width: 230px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 28px;
+
+    &_unread {
+      display: block;
+      padding: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      background: $primary-color;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      height: 20px;
+      min-width: 20px;
+    }
+  }
+
+  &__info {
+    align-items: center;
+  }
+
+  &__info &__photo {
+    width: 34px;
+    height: 34px;
+  }
+}

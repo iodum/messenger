@@ -1,0 +1,20 @@
+<li class="dialog {{#if info}}dialog__info{{/if}}">
+    <div class="dialog__photo"></div>
+    <div class="dialog__content">
+        <div class="dialog__header">
+            <div class="dialog__header_name">Андрей</div>
+            {{#unless info}}
+                <div class="dialog__header_date">10:49</div>
+            {{/unless}}
+        </div>
+        {{#unless info}}
+            <div class="dialog__message">
+                Друзья, у меня для вас особенный выпуск новостей!...
+
+                {{#if unread}}
+                    <span class="dialog__message_unread">{{ unread }}</span>
+                {{/if}}
+            </div>
+        {{/unless}}
+    </div>
+</li>

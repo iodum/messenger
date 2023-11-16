@@ -1,0 +1,31 @@
+@import "../variables";
+
+.icon-button {
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: transparent;
+  color: $text-main;
+
+  span {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &__primary {
+    color: #fff;
+    background: $primary-color;
+
+    &:hover {
+      background: $primary-color-hover;;
+    }
+  }
+}
